@@ -1,0 +1,81 @@
+.game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 1px solid #000;
+  margin: auto;
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url(img/dino2.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  background-image: url(img/cactus2.png);
+  background-size: 20px 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+  animation: cactusMov 2s infinite linear;
+}
+
+#ptyro {
+  width: 40px;
+  height: 40px;
+  background-image: url(img/ptyro.png);
+  background-size: 40px 40px;
+  position: relative;
+  left: 580px;
+  top: 10px;
+  animation: ptyroMov 4s 1s infinite linear
+}
+
+.jump {
+  animation: jump 0.4s linear;
+}
+
+@keyframes cactusMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+@keyframes ptyroMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes jump{
+  0% {
+    top: 150px;
+  }
+  
+  30% {
+    top: 100px;
+  }
+
+  50% {
+    top: 80px;
+  }
+
+  70% {
+    top: 100px;
+  }
+  
+  100% {
+    top: 150px;
+  }
+}
